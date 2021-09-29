@@ -1,0 +1,13 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: yx-registry
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
+    fetch-registry: false # 不拉取服务
+  server:
+    enable-self-preservation: false # 关闭自我保护，开发期间关闭
+    eviction-interval-timer-in-ms: 5000 # 时隔5秒进行一次服务列表清除，开发期间设置

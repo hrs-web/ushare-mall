@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="youxiang-item-service" />
+        <module name="youxiang-gateway" />
+        <module name="youxiang-common" />
+        <module name="youxiang-registry" />
+        <module name="youxiang-item-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="youxiangregistry" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="youxiang-common" options="-parameters" />
+      <module name="youxiang-gateway" options="-parameters" />
+      <module name="youxiang-item" options="-parameters" />
+      <module name="youxiang-item-interface" options="-parameters" />
+      <module name="youxiang-item-service" options="-parameters" />
+      <module name="youxiang-registry" options="-parameters" />
+      <module name="youxiangregistry" options="-parameters" />
+    </option>
+  </component>
+</project>
