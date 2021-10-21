@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d9f6306-9c9e-400a-b9a7-e0ddaa66f900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-interface/src/main/java/com/youxiang/item/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youxiang-manage-web/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youxiang-manage-web/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youxiang-manage-web/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youxiang-manage-web/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youxiang-manage-web/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youxiang-manage-web/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1535">
-              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-registry/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,8 +87,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="323">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-interface/src/main/java/com/youxiang/item/pojo/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-gateway/src/main/java/com/youxiang/YouxiangGatewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="171">
               <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -146,6 +175,8 @@
         <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-service/pom.xml" />
         <option value="$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-interface/src/main/java/com/youxiang/item/pojo/Category.java" />
       </list>
     </option>
   </component>
@@ -170,7 +201,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
-    <option name="y" value="406" />
+    <option name="y" value="405" />
     <option name="width" value="1610" />
     <option name="height" value="625" />
   </component>
@@ -180,8 +211,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-item-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -193,7 +279,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -276,16 +362,18 @@
       <updated>1632829775336</updated>
       <workItem from="1632829779933" duration="13037000" />
       <workItem from="1634438196959" duration="722000" />
+      <workItem from="1634820826930" duration="1209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13759000" />
+    <option name="totallyTimeSpent" value="14968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20643431" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -310,7 +398,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.22855228" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1930295" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="SciView" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Database" order="6" />
@@ -343,6 +431,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -389,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
@@ -405,7 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-gateway/src/main/java/com/youxiang/YouxiangGatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="171">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -415,10 +503,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1535">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-interface/src/main/java/com/youxiang/item/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
