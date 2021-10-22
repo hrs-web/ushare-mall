@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/db6?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/youxiang?serverTimezone=UTC
     username: root
     password: '0826'
 eureka:
