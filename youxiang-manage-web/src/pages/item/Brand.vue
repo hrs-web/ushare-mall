@@ -26,12 +26,8 @@
         </td>
         <td class="text-xs-center">{{ props.item.letter }}</td>
         <td class="justify-center layout px-0">
-          <v-btn icon @click="editBrand(props.item)">
-            <i class="el-icon-edit"/>
-          </v-btn>
-          <v-btn icon @click="deleteBrand(props.item)">
-            <i class="el-icon-delete"/>
-          </v-btn>
+          <v-btn color="info">编辑</v-btn>
+          <v-btn color="warning">删除</v-btn>
         </td>
       </template>
     </v-data-table>
