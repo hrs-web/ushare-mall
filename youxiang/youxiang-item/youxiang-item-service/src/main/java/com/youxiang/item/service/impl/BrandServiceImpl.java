@@ -3,12 +3,13 @@ package com.youxiang.item.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.youxiang.common.pojo.PageResult;
-import com.youxiang.item.mapper.BrandMapping;
+import com.youxiang.item.mapper.BrandMapper;
 import com.youxiang.item.pojo.Brand;
 import com.youxiang.item.service.BrandService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -16,10 +17,10 @@ import java.util.List;
 @Service
 public class BrandServiceImpl implements BrandService {
     @Autowired
-    private BrandMapping brandMapping;
+    private BrandMapper brandMapper;
 
     @Override
-    public PageResult<Brand> queryBrandByPage(String key, Integer page, Integer row, String sortBy, Boolean desc) {
+    public PageResult<Brand> queryBrandByPage(String key, Integer page, Integer rows, String sortBy, Boolean desc) {
         // 1.初始化Example对象
         Example example = new Example(Brand.class);
         Example.Criteria criteria = example.createCriteria();
@@ -28,15 +29,24 @@ public class BrandServiceImpl implements BrandService {
             criteria.andLike("name","%"+key+"%").orEqualTo("letter",key);
         }
         // 3.添加分页
-        PageHelper.startPage(page,row);
+        PageHelper.startPage(page,rows);
         // 4.添加排序
         if (StringUtils.isNotBlank(sortBy)){
             example.setOrderByClause(sortBy+(desc ? " desc":" asc"));
         }
         // 5.调用mapper方法
-        List<Brand> brands = this.brandMapping.selectByExample(example);
+        List<Brand> brands = this.brandMapper.selectByExample(example);
         PageInfo<Brand> info = new PageInfo<>(brands);
 
         return new PageResult<>(info.getTotal(),info.getList());
+    }
+
+    @Override
+    @Transactional  // 添加事务
+    public void saveBrand(Brand brand, List<Long> cids) {
+        // 1.插入品牌表
+        this.brandMapper.insertSelective(brand);  // insertSelective：只给有值的字段插入
+        // 2.插入关联表
+        cids.forEach(cid -> this.brandMapper.saveCategoryAndBrand(cid,brand.getId()));
     }
 }
