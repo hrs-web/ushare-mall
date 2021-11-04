@@ -12,6 +12,7 @@
         <module>youxiang-registry</module>
         <module>youxiang-item</module>
         <module>youxiang-common</module>
+        <module>youxiang-upload</module>
     </modules>
     <packaging>pom</packaging>
 

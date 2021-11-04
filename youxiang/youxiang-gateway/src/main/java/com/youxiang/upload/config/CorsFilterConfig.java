@@ -1,4 +1,4 @@
-package com.youxiang.config;
+package com.youxiang.upload.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
