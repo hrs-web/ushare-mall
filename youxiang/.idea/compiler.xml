@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="youxiang-item-service" />
-        <module name="youxiang-item-interface" />
         <module name="youxiang-upload" />
+        <module name="youxiang-item-interface" />
         <module name="youxiang-common" />
-        <module name="youxiang-gateway" />
         <module name="youxiang-registry" />
+        <module name="youxiang-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

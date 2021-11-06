@@ -1,9 +1,13 @@
 package com.youxiang.upload.service.impl;
 
+import com.github.tobato.fastdfs.domain.StorePath;
+import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.youxiang.upload.controller.UploadController;
 import com.youxiang.upload.service.UploadService;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,6 +23,9 @@ public class UploadServiceImpl implements UploadService {
     private static final List<String> CONTENT_TYPE = Arrays.asList("image/gif","image/jpeg","image/png");
     // 创建日志对象
     private static final Logger LOGGER = LoggerFactory.getLogger(UploadController.class);
+    // 注入fastDFS客户端
+    @Autowired
+    private FastFileStorageClient storageClient;
     @Override
     public String upload(MultipartFile file) {
         try {
@@ -36,12 +43,18 @@ public class UploadServiceImpl implements UploadService {
                 return null;
             }
             // 3.保存图片
+            /*
             File dir = new File("C:\\Download\\test");
             if (!dir.exists()){
                 dir.mkdirs();
             }
             file.transferTo(new File(dir,filename));
-            String url = "http://image.youxiang.com/"+filename;
+            */
+            String ext = StringUtils.substringAfterLast(filename,".");
+            StorePath storePath = this.storageClient.uploadFile(file.getInputStream(), file.getSize(), ext, null);
+
+
+            String url = "http://image.youxiang.com/"+storePath.getFullPath();
             return url;
         }catch (Exception e){
             return null;
