@@ -49,4 +49,25 @@ public class BrandServiceImpl implements BrandService {
         // 2.插入关联表
         cids.forEach(cid -> this.brandMapper.saveCategoryAndBrand(cid,brand.getId()));
     }
+
+    @Override
+    @Transactional
+    public void updateBrand(Brand brand, List<Long> cids) {
+        // 1.更新商品表
+        this.brandMapper.updateByPrimaryKeySelective(brand);
+        // 2.删除关联表
+        this.brandMapper.deleteCategoryAndBrand(brand.getId());
+        // 3.插入关联表
+        cids.forEach(cid -> this.brandMapper.saveCategoryAndBrand(cid,brand.getId()));
+    }
+
+    @Override
+    public void deleteBrand(Long id) {
+        // 1.删除商品表
+        this.brandMapper.deleteByPrimaryKey(id);
+        // 2.删除关联表
+        this.brandMapper.deleteCategoryAndBrand(id);
+    }
+
+
 }

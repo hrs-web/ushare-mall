@@ -18,4 +18,9 @@ public class CategoryServiceImpl implements CategoryService {
         category.setParentId(pid);
         return this.categoryMapper.select(category);
     }
+
+    @Override
+    public List<Category> queryBrandById(Long bid) {
+        return this.categoryMapper.queryBrandById(bid);
+    }
 }

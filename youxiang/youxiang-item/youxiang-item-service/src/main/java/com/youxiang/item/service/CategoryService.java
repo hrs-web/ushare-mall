@@ -11,4 +11,6 @@ public interface CategoryService {
      * @return
      */
     List<Category> queryCategoryByPid(Long id);
+
+    List<Category> queryBrandById(Long bid);
 }

@@ -73,7 +73,7 @@
           this.$http({
             method: this.isEdit ? 'put' : 'post',
             url: '/item/brand',
-            data: this.$qs.stringify(params)
+            data: this.$qs.stringify(params)   // data：参数放在请求体中
           }).then(() => {
             // 关闭窗口
             this.$emit("close");

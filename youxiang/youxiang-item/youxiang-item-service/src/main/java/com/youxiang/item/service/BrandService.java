@@ -23,4 +23,8 @@ public interface BrandService {
      * @param cids
      */
     void saveBrand(Brand brand, List<Long> cids);
+
+    void updateBrand(Brand brand, List<Long> cids);
+
+    void deleteBrand(Long id);
 }

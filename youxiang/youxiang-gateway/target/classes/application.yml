@@ -17,3 +17,5 @@ zuul:
   retryable: true   # 开启重试机制
   routes:
     item-service: /item/**
+  ignored-services:
+    - upload-server # 忽略upload-server服务

@@ -26,8 +26,12 @@
         </td>
         <td class="text-xs-center">{{ props.item.letter }}</td>
         <td class="justify-center layout px-0">
-          <v-btn color="info">编辑</v-btn>
-          <v-btn color="warning">删除</v-btn>
+          <v-btn icon @click="editBrand(props.item)">
+            <i class="el-icon-edit"/>
+          </v-btn>
+          <v-btn icon @click="deleteBrand(props.item)">
+            <i class="el-icon-delete"/>
+          </v-btn>
         </td>
       </template>
     </v-data-table>
@@ -129,10 +133,23 @@
             // 控制弹窗可见：
             this.show = true;
             // 获取要编辑的brand
-            this.oldBrand = oldBrand
+            this.oldBrand = oldBrand;
             // 回显商品分类
             this.oldBrand.categories = data;
           })
+      },
+      deleteBrand(brand){
+        this.$http({
+          method: 'delete',
+          url: '/item/brand',
+          params: {         // 请求参数拼接在url上
+            id:brand.id
+          }
+        }).then(()=>{
+          this.$message.success("删除成功！");
+        }).catch(()=>{
+          this.$message.error("删除失败！");
+        })
       },
       closeWindow(){
         // 重新加载数据

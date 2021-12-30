@@ -53,7 +53,6 @@ public class UploadServiceImpl implements UploadService {
             String ext = StringUtils.substringAfterLast(filename,".");
             StorePath storePath = this.storageClient.uploadFile(file.getInputStream(), file.getSize(), ext, null);
 
-
             String url = "http://image.youxiang.com/"+storePath.getFullPath();
             return url;
         }catch (Exception e){

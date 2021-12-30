@@ -52,4 +52,27 @@ public class BrandController {
         this.brandService.saveBrand(brand,cids);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+
+    /**
+     * 更新品牌
+     * @param brand
+     * @param cids
+     * @return
+     */
+    @PutMapping
+    public ResponseEntity<Void> updateBrand(Brand brand,@RequestParam("cids")List<Long> cids){
+        this.brandService.updateBrand(brand,cids);
+        return  ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    /**
+     * 删除商品
+     * @param id
+     * @return
+     */
+    @DeleteMapping
+    public ResponseEntity<Void> deleteBrand(@RequestParam("id")Long id){
+        this.brandService.deleteBrand(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
 }
