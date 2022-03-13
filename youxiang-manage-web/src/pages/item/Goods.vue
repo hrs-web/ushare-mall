@@ -46,10 +46,10 @@
             <i class="el-icon-edit"/>
           </v-btn>
           <v-btn icon>
-            <i class="el-icon-delete"/>
+            <i class="el-icon-delete" @click="deleteGoods(props.item.id)"/>
           </v-btn>
-          <v-btn icon v-if="props.item.saleable">下架</v-btn>
-          <v-btn icon v-else>上架</v-btn>
+          <v-btn icon v-if="props.item.saleable" @click="saleableGoods(props.item)">下架</v-btn>
+          <v-btn icon v-else @click="deleteGoods(props.item)">上架</v-btn>
         </td>
       </template>
     </v-data-table>
@@ -130,6 +130,33 @@
       }
     },
     methods: {
+      deleteGoods(id) {
+        this.$message.confirm("确认要删除该商品吗？")
+          .then(() => {
+            this.$http.delete("/item/spu/goods/" + id)
+              .then(() => {
+                this.$message.success("删除成功");
+                this.getDataFromServer();
+              })
+              .catch(() => {
+                this.$message.error("删除失败");
+              })
+          })
+      },
+      saleableGoods(goods){  // 上下架操作
+        this.$http.get('/item/spu/saleable', {
+          params: {
+            spuId: goods.id,
+            saleable: this.filter.saleable // 上下架
+          }
+        }).then(() => {
+          // 关闭窗口
+          this.$message.success("操作成功！");
+          this.getDataFromServer();
+        }).catch(() => {
+          this.$message.error("操作失败！");
+        });
+      },
       getDataFromServer() { // 从服务的加载数的方法。
         // 发起请求
         this.$http.get("/item/spu/page", {

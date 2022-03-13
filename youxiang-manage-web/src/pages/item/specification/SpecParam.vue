@@ -181,7 +181,7 @@ export default {
             this.loadData();
           }).catch(() => {
               this.$message.error("保存失败！");
-            });
+          });
     }
   }
 };
