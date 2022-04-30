@@ -1,0 +1,17 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: goods-web
+  thymeleaf:
+    cache: false  # 关闭缓存（还需要手动刷新工程：ctrl+shift+F9）
+  main:
+    allow-bean-definition-overriding: true # spring boot2.1.X以后，默认值是false，注解@FeignClient有contextId属性（设为true允许允许bean）
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5 # 每个五秒发送一次心跳
+    lease-expiration-duration-in-seconds: 10 # 十秒不发送就过期

@@ -14,6 +14,7 @@ public class CorsFilterConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         // 允许跨域的域名，如果要携带cookie一定不能设置*
         configuration.addAllowedOrigin("http://manage.youxiang.com");
+        configuration.addAllowedOrigin("http://www.youxiang.com");
         // 允许携带cookie
         configuration.setAllowCredentials(true);
         //允许所有请求方式跨域方法

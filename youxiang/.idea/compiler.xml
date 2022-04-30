@@ -9,9 +9,11 @@
         <module name="youxiang-item-service" />
         <module name="youxiang-upload" />
         <module name="youxiang-item-interface" />
+        <module name="youxiang-goods-web" />
         <module name="youxiang-common" />
         <module name="youxiang-registry" />
         <module name="youxiang-gateway" />
+        <module name="youxiang-search" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,10 +24,12 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="youxiang-common" options="-parameters" />
       <module name="youxiang-gateway" options="-parameters" />
+      <module name="youxiang-goods-web" options="-parameters" />
       <module name="youxiang-item" options="-parameters" />
       <module name="youxiang-item-interface" options="-parameters" />
       <module name="youxiang-item-service" options="-parameters" />
       <module name="youxiang-registry" options="-parameters" />
+      <module name="youxiang-search" options="-parameters" />
       <module name="youxiang-upload" options="-parameters" />
       <module name="youxiangregistry" options="-parameters" />
     </option>

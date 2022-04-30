@@ -3,6 +3,7 @@ package com.youxiang.item.controller;
 import com.youxiang.common.pojo.PageResult;
 import com.youxiang.item.bo.SpuBo;
 import com.youxiang.item.pojo.Sku;
+import com.youxiang.item.pojo.Spu;
 import com.youxiang.item.pojo.SpuDetail;
 import com.youxiang.item.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -73,8 +74,8 @@ public class GoodsController {
      * @return
      */
     @GetMapping("sku/list")
-    public ResponseEntity<List<Sku>> querySkuBySpuId(@PathParam("spuId")Long spuId){
-        List<Sku> skus = this.goodsService.querySkuBySpuId(spuId);
+    public ResponseEntity<List<Sku>> querySkusBySpuId(@RequestParam("id")Long spuId){
+        List<Sku> skus = this.goodsService.querySkusBySpuId(spuId);
         if (CollectionUtils.isEmpty(skus)){
             return ResponseEntity.notFound().build();
         }
@@ -114,6 +115,20 @@ public class GoodsController {
     public ResponseEntity<Void> deleteGoods(@PathVariable("spuId")Long spuId){
         this.goodsService.deleteGoods(spuId);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    /**
+     * 根据spu的id查询spu
+     * @param id
+     * @return
+     */
+    @GetMapping("spu/{id}")
+    public ResponseEntity<Spu> querySpuById(@PathVariable("id")Long id){
+        Spu spu = this.goodsService.querySpuById(id);
+        if (spu == null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(spu);
     }
 
 }

@@ -147,7 +147,7 @@ public class GoodsServiceImpl implements GoodsService {
      * @return
      */
     @Override
-    public List<Sku> querySkuBySpuId(Long spuId) {
+    public List<Sku> querySkusBySpuId(Long spuId) {
         Sku sku = new Sku();
         sku.setSpuId(spuId);
         List<Sku> skus = this.skuMapper.select(sku);
@@ -214,5 +214,15 @@ public class GoodsServiceImpl implements GoodsService {
         spu.setId(spuId);
         spu.setValid(false);
         this.spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 根据spu的id查询spu
+     * @param id
+     * @return
+     */
+    @Override
+    public Spu querySpuById(Long id) {
+        return this.spuMapper.selectByPrimaryKey(id);
     }
 }

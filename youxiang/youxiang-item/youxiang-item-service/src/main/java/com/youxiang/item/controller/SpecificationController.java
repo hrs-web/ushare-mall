@@ -37,7 +37,7 @@ public class SpecificationController {
      * @return
      */
     @GetMapping("params")
-    private ResponseEntity<List<SpecParam>> queryParams(
+    public ResponseEntity<List<SpecParam>> queryParams(
             @RequestParam(value = "gid",required = false) Long gid,
             @RequestParam(value = "cid",required = false) Long cid,
             @RequestParam(value = "generic",required = false) Boolean generic,
@@ -56,7 +56,7 @@ public class SpecificationController {
      * @return
      */
     @PostMapping("group")
-    private ResponseEntity<Void> saveGroup(@RequestBody SpecGroup specGroup){
+    public ResponseEntity<Void> saveGroup(@RequestBody SpecGroup specGroup){
         this.specificationService.saveGroup(specGroup);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
@@ -67,7 +67,7 @@ public class SpecificationController {
      * @return
      */
     @PutMapping("group")
-    private ResponseEntity<Void> updateGroup(@RequestBody SpecGroup specGroup){
+    public ResponseEntity<Void> updateGroup(@RequestBody SpecGroup specGroup){
         this.specificationService.updateGroup(specGroup);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
@@ -78,7 +78,7 @@ public class SpecificationController {
      * @return
      */
     @DeleteMapping("group/{id}")
-    private ResponseEntity<Void> deleteGroup(@PathVariable("id")Long id){
+    public ResponseEntity<Void> deleteGroup(@PathVariable("id")Long id){
         this.specificationService.deleteGroup(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
@@ -89,7 +89,7 @@ public class SpecificationController {
      * @return
      */
     @PostMapping("param")
-    private ResponseEntity<Void> saveParam(@RequestBody SpecParam specParam){
+    public ResponseEntity<Void> saveParam(@RequestBody SpecParam specParam){
         this.specificationService.saveParam(specParam);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
@@ -100,7 +100,7 @@ public class SpecificationController {
      * @return
      */
     @PutMapping("param")
-    private ResponseEntity<Void> updateParam(@RequestBody SpecParam specParam){
+    public ResponseEntity<Void> updateParam(@RequestBody SpecParam specParam){
         this.specificationService.updateParam(specParam);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
@@ -111,8 +111,22 @@ public class SpecificationController {
      * @return
      */
     @DeleteMapping("param/{id}")
-    private ResponseEntity<Void> deleteParam(@PathVariable("id")Long id){
+    public ResponseEntity<Void> deleteParam(@PathVariable("id")Long id){
         this.specificationService.deleteParam(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    /**
+     * 查询规格参数组及组内的规格参数
+     * @param cid
+     * @return
+     */
+    @GetMapping("{cid}")
+    public ResponseEntity<List<SpecGroup>> queryGroupWithParam(@PathVariable("cid")Long cid){
+        List<SpecGroup> specs = this.specificationService.queryGroupWithParam(cid);
+        if (CollectionUtils.isEmpty(specs)){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(specs);
     }
 }

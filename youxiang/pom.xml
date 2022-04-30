@@ -13,6 +13,8 @@
         <module>youxiang-item</module>
         <module>youxiang-common</module>
         <module>youxiang-upload</module>
+        <module>youxiang-search</module>
+        <module>youxiang-goods-web</module>
     </modules>
     <packaging>pom</packaging>
 

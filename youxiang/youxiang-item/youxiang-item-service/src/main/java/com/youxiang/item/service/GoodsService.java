@@ -3,6 +3,7 @@ package com.youxiang.item.service;
 import com.youxiang.common.pojo.PageResult;
 import com.youxiang.item.bo.SpuBo;
 import com.youxiang.item.pojo.Sku;
+import com.youxiang.item.pojo.Spu;
 import com.youxiang.item.pojo.SpuDetail;
 
 import java.util.List;
@@ -14,11 +15,13 @@ public interface GoodsService {
 
     SpuDetail querySpuDetailBySpuId(Long spuId);
 
-    List<Sku> querySkuBySpuId(Long spuId);
+    List<Sku> querySkusBySpuId(Long spuId);
 
     void updateGoods(SpuBo spuBo);
 
     void updateSaleable(Long spuId, Boolean saleable);
 
     void deleteGoods(Long spuId);
+
+    Spu querySpuById(Long id);
 }

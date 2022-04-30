@@ -21,4 +21,6 @@ public interface SpecificationService {
     void updateParam(SpecParam specParam);
 
     void deleteParam(Long id);
+
+    List<SpecGroup> queryGroupWithParam(Long cid);
 }

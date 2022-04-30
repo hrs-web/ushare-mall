@@ -98,4 +98,19 @@ public class SpecificationServiceImpl implements SpecificationService {
     public void deleteParam(Long id) {
         this.specParamsMapper.deleteByPrimaryKey(id);
     }
+
+    /**
+     * 查询规格参数组及组内的规格参数
+     * @param cid
+     * @return
+     */
+    @Override
+    public List<SpecGroup> queryGroupWithParam(Long cid) {
+        List<SpecGroup> groups = this.queryGroupsByCid(cid);
+        groups.forEach(group ->{
+            List<SpecParam> params = this.queryParams(group.getId(), null, null, null);
+            group.setParams(params);
+        });
+        return groups;
+    }
 }
