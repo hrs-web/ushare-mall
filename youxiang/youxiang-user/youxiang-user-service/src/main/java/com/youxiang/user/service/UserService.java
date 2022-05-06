@@ -7,7 +7,7 @@ public interface UserService {
 
     Boolean sendVerifyCode(String phone);
 
-    Boolean registry(User user, String code);
+    Boolean register(User user, String code);
 
     User queryUser(String username, String password);
 }

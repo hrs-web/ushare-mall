@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 
 @RestController
 public class UserController {
@@ -36,7 +35,7 @@ public class UserController {
      * @return
      */
     @PostMapping("code")
-    public ResponseEntity<Void> sendVerifyCode(@PathParam("phone")String phone) {
+    public ResponseEntity<Void> sendVerifyCode(@RequestParam("phone")String phone) {
         Boolean bool = this.userService.sendVerifyCode(phone);
         if (bool == null || !bool) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -50,9 +49,9 @@ public class UserController {
      * @param code
      * @return
      */
-    @PostMapping("registry")
-    public ResponseEntity<Void> registry(@Valid User user, @PathParam("code")String code){
-        Boolean bool = this.userService.registry(user,code);
+    @PostMapping("register")
+    public ResponseEntity<Void> registry(@Valid User user, @RequestParam("code")String code){
+        Boolean bool = this.userService.register(user,code);
         if (bool == null || !bool){
             return ResponseEntity.badRequest().build();
         }

@@ -72,7 +72,7 @@ public class UserServiceImpl implements UserService {
             map.put("code",code);
             this.amqpTemplate.convertAndSend("YOUXIANG.SMS.EXCHANGE","sms.verify",map);
             // 存储到redis，5分钟后失效
-            this.redisTemplate.opsForValue().set(KEY_PREFIX + phone,code,5, TimeUnit.MINUTES);
+            this.redisTemplate.opsForValue().set(KEY_PREFIX + phone,code,10, TimeUnit.MINUTES);
             return true;
         }catch (Exception e){
             logger.error("发送短信失败：phone：{}，code：{}",phone,code);
@@ -86,7 +86,7 @@ public class UserServiceImpl implements UserService {
      * @param code
      */
     @Override
-    public Boolean registry(User user, String code) {
+    public Boolean register(User user, String code) {
         // 1.效验验证码
         String redisCode = this.redisTemplate.opsForValue().get(KEY_PREFIX + user.getPhone());
         if (!StringUtils.equals(code,redisCode)){

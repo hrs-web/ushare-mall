@@ -2,48 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d9f6306-9c9e-400a-b9a7-e0ddaa66f900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/youxiang-common/src/main/java/com/youxiang/common/utils/CookieUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-common/src/main/java/com/youxiang/common/utils/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-common/src/main/java/com/youxiang/common/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-common/src/main/java/com/youxiang/common/utils/NumberUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/listener/GoodsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-search/src/main/java/com/youxiang/search/Listener/GoodsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/YouxiangSmsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/config/SmsProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/utils/SmsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-interface/src/main/java/com/youxiang/user/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/YouxiangUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/utils/CodecUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/test/java/com/youxiang/user/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-goods-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-goods-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/service/GoodsHtmlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/service/GoodsHtmlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-goods-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-goods-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/java/com/youxiang/item/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/java/com/youxiang/item/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-item/youxiang-item-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-search/src/main/java/com/youxiang/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-search/src/main/java/com/youxiang/search/service/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youxiang-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="71" column="55" lean-forward="true" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+            <state relative-caret-position="-906">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +62,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youxiang-registry/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/utils/SmsUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="171">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -127,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+            <state relative-caret-position="-403">
+              <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,38 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/config/SmsProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -201,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/java/com/youxiang/item/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/java/com/youxiang/item/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/java/com/youxiang/item/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/youxiangGoodsApplication.java" />
@@ -230,13 +204,11 @@
         <option value="$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/service/GoodsHtmlService.java" />
         <option value="$PROJECT_DIR$/youxiang-item/src/test/java/test.java" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/YouxiangUserApplication.java" />
-        <option value="$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/YouxiangSmsApplication.java" />
         <option value="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/config/SmsProperties.java" />
         <option value="$PROJECT_DIR$/youxiang-sms/pom.xml" />
-        <option value="$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/youxiang-user/pom.xml" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/test/java/com/youxiang/user/RedisTest.java" />
@@ -249,9 +221,12 @@
         <option value="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/utils/SmsUtils.java" />
         <option value="$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-interface/src/main/java/com/youxiang/user/pojo/User.java" />
-        <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java" />
         <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/youxiang-registry/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -279,11 +254,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="youxiang-user-interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="youxiang-sms" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="youxiang-user-interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="youxiang-sms" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -291,8 +266,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="102" />
-    <option name="y" value="392" />
+    <option name="x" value="32" />
+    <option name="y" value="350" />
     <option name="width" value="1780" />
     <option name="height" value="840" />
   </component>
@@ -308,6 +283,32 @@
             <path>
               <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
               <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-registry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-registry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-registry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youxiang" type="462c0819:PsiDirectoryNode" />
+              <item name="youxiang-registry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youxiang" type="b2602c69:ProjectViewProjectNode" />
@@ -825,7 +826,7 @@
       <workItem from="1651221096228" duration="643000" />
       <workItem from="1651307408734" duration="7348000" />
       <workItem from="1651463778872" duration="845000" />
-      <workItem from="1651544533453" duration="46202000" />
+      <workItem from="1651544533453" duration="49342000" />
     </task>
     <task id="LOCAL-00001" summary="实现商品分类查询">
       <created>1634916062906</created>
@@ -897,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651307517362</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="手机短信验证码、注册&#10;redis、rabbitmq">
+      <created>1651843265652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651843265652</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -933,7 +941,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400839000" />
+    <option name="totallyTimeSpent" value="403979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -946,8 +954,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -965,14 +974,14 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.30169973" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.17426273" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.22587131" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="SciView" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
@@ -994,7 +1003,8 @@
     <MESSAGE value="完成规格参数页面" />
     <MESSAGE value="完成商品列表页面" />
     <MESSAGE value="新增搜索功能（elasticsearch）" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增搜索功能（elasticsearch）" />
+    <MESSAGE value="手机短信验证码、注册&#10;redis、rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="手机短信验证码、注册&#10;redis、rabbitmq" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1010,16 +1020,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/service/GoodsHtmlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-goods-web/src/main/java/com/youxiang/goods/listener/GoodsListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -1307,27 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-item/youxiang-item-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/utils/SmsUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1338,34 +1321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,17 +1361,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="171">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+        <state relative-caret-position="-403">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1421,11 +1390,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youxiang-user/youxiang-user-service/src/main/java/com/youxiang/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="71" column="55" lean-forward="true" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+        <state relative-caret-position="-906">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-registry/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/listener/SmsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/java/com/youxiang/sms/utils/SmsUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youxiang-sms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
