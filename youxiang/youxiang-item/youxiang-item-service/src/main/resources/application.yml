@@ -7,6 +7,14 @@ spring:
     url: jdbc:mysql://localhost:3306/youxiang?serverTimezone=UTC
     username: root
     password: '0826'
+  rabbitmq:                # 配置rabbitmq
+    host: 192.168.182.100  # 默认使用5672端口
+    username: youxiang
+    password: youxiang
+    virtual-host: /youxiang
+    template:
+      exchange: YOUXIANG.ITEM.EXCHANGE # 设置默认路由
+    publisher-confirm-type: correlated # 生产者确认机制，确保消息会正确发送，如果发送失败会有错误回执，从而触发重试
 eureka:
   client:
     service-url:

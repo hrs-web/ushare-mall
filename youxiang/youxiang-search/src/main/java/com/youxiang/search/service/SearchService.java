@@ -12,11 +12,9 @@ import com.youxiang.search.pojo.Goods;
 import com.youxiang.search.pojo.SearchRequest;
 import com.youxiang.search.pojo.SearchResult;
 import com.youxiang.search.repository.GoodsRepository;
-import io.netty.util.internal.StringUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.Operator;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.Aggregation;
@@ -324,5 +322,25 @@ public class SearchService {
             brands.add(brand);
         });
         return brands;
+    }
+
+    /**
+     * 创建或更新索引
+     * @param spuId
+     */
+    public void saveIndex(Long spuId) throws IOException {
+        Spu spu = this.goodsClient.querySpuById(spuId);
+        // 构建商品
+        Goods goods = this.buildGoods(spu);
+        // 保存数据到索引库
+        this.goodsRepository.save(goods);
+    }
+
+    /**
+     * 删除索引
+     * @param spuId
+     */
+    public void deleteIndex(Long spuId) {
+        this.goodsRepository.deleteById(spuId);
     }
 }

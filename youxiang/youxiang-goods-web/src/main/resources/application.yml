@@ -7,7 +7,11 @@ spring:
     cache: false  # 关闭缓存（还需要手动刷新工程：ctrl+shift+F9）
   main:
     allow-bean-definition-overriding: true # spring boot2.1.X以后，默认值是false，注解@FeignClient有contextId属性（设为true允许允许bean）
-
+  rabbitmq:
+    host: 192.168.182.100
+    username: youxiang
+    password: youxiang
+    virtual-host: /youxiang
 eureka:
   client:
     service-url:

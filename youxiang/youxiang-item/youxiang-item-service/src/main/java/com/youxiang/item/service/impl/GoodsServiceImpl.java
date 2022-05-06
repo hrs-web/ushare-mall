@@ -9,6 +9,8 @@ import com.youxiang.item.pojo.*;
 import com.youxiang.item.service.CategoryService;
 import com.youxiang.item.service.GoodsService;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,6 +36,8 @@ public class GoodsServiceImpl implements GoodsService {
     private SkuMapper skuMapper;
     @Autowired
     private StockMapper stockMapper;
+    @Autowired
+    private AmqpTemplate amqpTemplate;
 
     /**
      * 分页查询spu
@@ -105,6 +109,9 @@ public class GoodsServiceImpl implements GoodsService {
 
         // 新增sku和stock
         saveSkuAndStock(spuBo);
+
+        // 发送insert消息给rabbitmq队列
+        sendMessage("insert",spuBo.getId());
     }
 
     /**
@@ -188,7 +195,8 @@ public class GoodsServiceImpl implements GoodsService {
         // 更新spuDetail
         SpuDetail spuDetail = spuBo.getSpuDetail();
         this.spuDetailMapper.updateByPrimaryKeySelective(spuDetail);
-
+        // 发送update消息给rabbitmq队列
+        sendMessage("update",spuBo.getId());
     }
 
     /**
@@ -214,6 +222,8 @@ public class GoodsServiceImpl implements GoodsService {
         spu.setId(spuId);
         spu.setValid(false);
         this.spuMapper.updateByPrimaryKeySelective(spu);
+        // 发送delete消息给rabbitmq队列
+        sendMessage("delete",spuId);
     }
 
     /**
@@ -224,5 +234,19 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public Spu querySpuById(Long id) {
         return this.spuMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     *发送信息到mq
+     * @param type
+     * @param spuId
+     */
+    private void sendMessage(String type,Long spuId){
+        try {
+            this.amqpTemplate.convertAndSend("item." + type,spuId);
+        }catch (AmqpException e){
+            e.printStackTrace();
+        }
+
     }
 }

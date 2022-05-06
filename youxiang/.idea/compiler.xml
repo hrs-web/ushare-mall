@@ -11,8 +11,11 @@
         <module name="youxiang-item-interface" />
         <module name="youxiang-goods-web" />
         <module name="youxiang-common" />
+        <module name="youxiang-sms" />
         <module name="youxiang-registry" />
+        <module name="youxiang-user-service" />
         <module name="youxiang-gateway" />
+        <module name="youxiang-user-interface" />
         <module name="youxiang-search" />
       </profile>
     </annotationProcessing>
@@ -30,7 +33,11 @@
       <module name="youxiang-item-service" options="-parameters" />
       <module name="youxiang-registry" options="-parameters" />
       <module name="youxiang-search" options="-parameters" />
+      <module name="youxiang-sms" options="-parameters" />
       <module name="youxiang-upload" options="-parameters" />
+      <module name="youxiang-user" options="-parameters" />
+      <module name="youxiang-user-interface" options="-parameters" />
+      <module name="youxiang-user-service" options="-parameters" />
       <module name="youxiangregistry" options="-parameters" />
     </option>
   </component>

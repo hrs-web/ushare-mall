@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.182.100
+    virtual-host: /youxiang
+    username: youxiang
+    password: youxiang
+youxiang:
+  sms:
+    accessKeyId: LTAI5tAxibptshA7MojXQaSV  # AccessKeyID
+    accessKeySecret: yLoAi7oiYOaEV63qQAieAuzOyYk5ON # AccessKeySecret
+    signName: 阿里云短信测试  # 签名名称
+    templateCode: SMS_154950909  #模板名称
+

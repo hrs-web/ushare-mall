@@ -64,4 +64,9 @@ public class GoodsHtmlService {
             }
         });*/
     }
+
+    public void deleteHtml(Long spuId) {
+        File file = new File("C:\\Tomcat9\\nginx-1.8.0\\html\\item\\",spuId+".html");
+        file.deleteOnExit();
+    }
 }

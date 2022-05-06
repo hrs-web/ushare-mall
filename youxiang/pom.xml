@@ -15,6 +15,8 @@
         <module>youxiang-upload</module>
         <module>youxiang-search</module>
         <module>youxiang-goods-web</module>
+        <module>youxiang-user</module>
+        <module>youxiang-sms</module>
     </modules>
     <packaging>pom</packaging>
 

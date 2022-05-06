@@ -1,0 +1,27 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/youxiang?serverTimezone=UTC
+    username: root
+    password: '0826'
+  redis:
+    host: 192.168.182.100  # 默认端口6379
+  rabbitmq:
+    host: 192.168.182.100  # 默认端口5672
+    username: youxiang
+    password: youxiang
+    virtual-host: /youxiang
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+mybatis:
+  type-aliases-package: com.youxiang.user.pojo
