@@ -17,6 +17,9 @@
         <module>youxiang-goods-web</module>
         <module>youxiang-user</module>
         <module>youxiang-sms</module>
+        <module>youxiang-auth</module>
+        <module>youxiang-cart</module>
+        <module>youxiang-order</module>
     </modules>
     <packaging>pom</packaging>
 

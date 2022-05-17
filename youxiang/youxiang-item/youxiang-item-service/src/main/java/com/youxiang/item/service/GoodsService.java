@@ -24,4 +24,6 @@ public interface GoodsService {
     void deleteGoods(Long spuId);
 
     Spu querySpuById(Long id);
+
+    Sku querySkuById(Long id);
 }

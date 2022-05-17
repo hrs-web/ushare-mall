@@ -10,8 +10,8 @@ spring:
     password: youxiang
 youxiang:
   sms:
-    accessKeyId:   # AccessKeyID
-    accessKeySecret:  # AccessKeySecret
-    signName:   # 签名名称
-    templateCode:   #模板名称
+    accessKeyId: XXXXXXXXXX  # AccessKeyID
+    accessKeySecret: XXXXXXXXX # AccessKeySecret
+    signName: 阿里云短信测试  # 签名名称
+    templateCode: SMS_XXXXXXXX  #模板名称
 

@@ -6,17 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="youxiang-item-service" />
-        <module name="youxiang-upload" />
-        <module name="youxiang-item-interface" />
-        <module name="youxiang-goods-web" />
-        <module name="youxiang-common" />
-        <module name="youxiang-sms" />
-        <module name="youxiang-registry" />
-        <module name="youxiang-user-service" />
         <module name="youxiang-gateway" />
+        <module name="youxiang-sms" />
+        <module name="youxiang-cart" />
+        <module name="youxiang-item-service" />
+        <module name="youxiang-goods-web" />
+        <module name="youxiang-order" />
         <module name="youxiang-user-interface" />
+        <module name="youxiang-auth-service" />
+        <module name="youxiang-common" />
+        <module name="youxiang-user-service" />
+        <module name="youxiang-upload" />
         <module name="youxiang-search" />
+        <module name="youxiang-auth-common" />
+        <module name="youxiang-registry" />
+        <module name="youxiang-item-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,12 +29,17 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="youxiang-auth" options="-parameters" />
+      <module name="youxiang-auth-common" options="-parameters" />
+      <module name="youxiang-auth-service" options="-parameters" />
+      <module name="youxiang-cart" options="-parameters" />
       <module name="youxiang-common" options="-parameters" />
       <module name="youxiang-gateway" options="-parameters" />
       <module name="youxiang-goods-web" options="-parameters" />
       <module name="youxiang-item" options="-parameters" />
       <module name="youxiang-item-interface" options="-parameters" />
       <module name="youxiang-item-service" options="-parameters" />
+      <module name="youxiang-order" options="-parameters" />
       <module name="youxiang-registry" options="-parameters" />
       <module name="youxiang-search" options="-parameters" />
       <module name="youxiang-sms" options="-parameters" />

@@ -5,6 +5,7 @@ import com.youxiang.item.bo.SpuBo;
 import com.youxiang.item.pojo.Sku;
 import com.youxiang.item.pojo.Spu;
 import com.youxiang.item.pojo.SpuDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -49,4 +50,12 @@ public interface GoodsApi {
      */
     @GetMapping("spu/{id}")
     Spu querySpuById(@PathVariable("id")Long id);
+
+    /**
+     * 根据skuId查询sku
+     * @param id
+     * @return
+     */
+    @GetMapping("sku/{id}")
+    Sku querySkuById(@PathVariable("id") Long id);
 }
